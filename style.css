@@ -1,0 +1,140 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+* {
+    font-family: sans-serif; 
+}
+img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+span, a {
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+}
+.all {
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: #EEEEFE;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.center {
+    background-color: #222232;
+    padding: 20px;
+    width: 47%;
+    transition: 0.3s all linear;
+    cursor: pointer;
+}
+.center:first-child {
+    margin-right: 20px;
+}
+.bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.center:hover {
+    box-shadow: 0 0 70px 5px;
+    transform: scale(1.02);
+    border-radius: 10px;
+}
+.box1 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.result, .result1 {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.6;
+    display: inline-block;
+    color: #fff;
+    margin-left: 20px;
+    padding: 10px;
+    text-align: justify;
+    min-height: 10px;
+}
+.int0, .int {
+    padding: 10px;
+    transition: 0.3s all linear;
+    border: none;
+    font-size: 20px;
+    color: #222232;
+}
+.int0 {
+    width: 70%;
+}
+.btn {
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s all linear;
+    color: #222232;
+}
+.btn0 {
+    width: 29%;
+}
+.btn:hover {
+    box-shadow: 0 0 10px 1px #fff;
+    border-radius: 6px;
+    transform: scale(1.03);
+}
+.int0:hover {
+    box-shadow: 0 0 10px 1px #fff;
+    border-radius: 6px;
+    transform: scale(1.03);
+}
+.int:hover {
+    box-shadow: 0 0 10px 1px #fff;
+    border-radius: 6px;
+    transform: scale(1.03);
+}
+.form1, .form2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.int {
+    width: 34%;
+}
+.btn {
+    width: 29%;
+}
+@media(max-width: 800px) {
+    .all {
+        display: block;
+        padding-top: 10px;
+    }
+    .center {
+        margin: auto;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .center:first-child {
+        margin: 20px auto;
+    }
+    .form {
+        display: block;
+    }
+}
+@media(max-width: 400px) {
+    .int, .int0, .btn, .btn0 {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
